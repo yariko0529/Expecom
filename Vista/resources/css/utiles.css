@@ -1,0 +1,261 @@
+.button_o{
+    background: #246B24;
+    border: 1px solid;
+    border-color: transparent transparent rgba(0,0,0,0.4) transparent;
+    -webkit-border-radius: 13px;
+    -moz-border-radius:    13px;
+    border-radius:         13px;
+    color: #fff;
+    display: table-cell;
+    font-size: 13px;
+    font-weight: bold;
+    height: 13px;
+    padding: 2px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+    width: 114px;
+}
+.button_over_o{
+    background: -moz-linear-gradient(top,#F08080,#FF0000);
+    -moz-transform:scale(1.1,1.1);
+    -moz-border-radius:    13px;
+    border-radius:         13px;
+}
+.mytoolbar{
+    background-color: #A3DAB5;   
+}
+.mywindow{
+    background-color: #30AC59;
+    -webkit-border-radius: 13px;
+    -moz-border-radius:    10px;
+    border-radius:         10px;
+}
+.wizard-image{background:transparent url(../images/utiles/pcblue.png) 10px center no-repeat;
+              padding-left:150;
+}
+.id_celda {
+    background-color: #FF0000;
+}
+#header  {
+    background: #7F99BE url(../images/utiles/barra.gif) repeat-x center;
+}
+#header h1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+
+
+.button_o:hover,
+.button_o:focus {
+    background: #265B98;
+}
+
+.button_o:active {
+    background: #1F4C7E;
+    border-color: rgba(0,0,0,0.4) transparent transparent transparent;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+}
+.medios{
+    background-image:url(../images/utiles/medios.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.sub_medios{
+    background-image:url(../images/utiles/submedios.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.root_medios{
+    background-image:url(../images/utiles/component.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.data_entry{
+    background-image:url(../images/utiles/data.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.gestion_estructural{
+    background-image:url(../images/utiles/estructura.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.insert_exp{
+    background-image:url(../images/utiles/addExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.edit_exp{
+    background-image:url(../images/utiles/editExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.eliminar_exp{
+    background-image:url(../images/utiles/eliminarExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.expedientes{
+    background-image:url(../images/utiles/confExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.conformar_exp{
+    background-image:url(../images/utiles/conformarExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.buscar_exp{
+    background-image:url(../images/utiles/buscarExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.pdf{
+    background-image:url(../images/utiles/pdf.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.computer{
+    background:transparent url(computer.png) 10px center no-repeat;padding-left:100px;
+}  
+@font-face {
+    font-family: "gardens";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Capture.ttf");
+}
+
+@font-face {
+    font-family: "disclamer";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/disclamer.otf");
+}
+#header  {
+    background: #246B24;
+}
+#header h1 {
+    font-size: 20px;
+    color: #fff;
+    font-family: "gardens";
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+.denegado{
+    font-size: 60px;
+    color: #CC0000;
+    font-family: "gardens";
+    font-weight: normal;
+    padding: 5px 10px;
+}
+
+.insertar{
+    background-image:url(../images/utiles/insertar.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.editar{
+    background-image:url(../images/utiles/editar.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.eliminar{
+    background-image:url(../images/utiles/eliminar.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.cerrar{
+    background-image:url(../images/utiles/cerrar.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.admin{
+    background-image:url(../images/utiles/1.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.jefetec{
+    background-image:url(../images/utiles/3.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.tec{
+    background-image:url(../images/utiles/2.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.addExp{
+    background-image:url(../images/utiles/addExp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.delete_exp{
+    background-image:url(../images/utiles/delete_exp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.conformar32{
+    background-image:url(../images/utiles/conformar32.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.conformar{
+    background-image:url(../images/utiles/conformar.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.user_exp{
+    background-image:url(../images/utiles/user_exp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.lis_exp{
+    background-image:url(../images/utiles/lis_exp.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.mis_reportes{
+    background-image:url(../images/utiles/reportes.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.solucionar_reporte{
+    background-image:url(../images/utiles/solucionarReporte.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.chgresconf{
+    background-image:url(../images/utiles/chgresconf.png)!important;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.mis_expedientes { 
+    background-color: #33D685;
+}
+
+.html {
+    background: url(background.jpg) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'PT Sans', Tahoma, Arial, serif;
+    line-height: 13px
+}

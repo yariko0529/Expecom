@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="resources/css/ext-all.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/utiles.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/examples.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/pure-min.css" />
+
+        <script type="text/javascript" src="resources/js/Ext/ext-base.js"></script>
+        <script type="text/javascript" src="resources/js/Ext/ext-all.js"></script>
+        <script type="text/javascript" src="resources/js/common/examples.js"></script>
+        <script>
+           function login(){
+               Ext.onReady(function(){
+                   var user=document.getElementById('tf_user').value;
+                   var pass=document.getElementById('tf_password').value;
+                   if(user!="" && pass!=""){
+                       Ext.Ajax.request({
+                       url:'../Controlador/ControladorLogin.php',
+                       method:'POST',
+                       params:{
+                           accion:'login',
+                           user: user,
+                           pass:pass
+                       },
+                       success:function(res,opt){
+                           obj=Ext.decode(res.responseText);
+                           if(obj.success){
+                               Ext.example.msg('Hola',obj.Msg);
+                               if(obj.usuario.privilegio==1){
+                                   window.location='estructura.html';
+                               }else if(obj.usuario.privilegio==3){
+                                   window.location='expedientes.html';
+                               }else if(obj.usuario.privilegio==2){
+                                   window.location='reportes.html';
+                               }
+                           }else{
+                               Ext.example.msg('ERROR',obj.Msg);
+                           }
+                           
+                           
+                       },
+                       failure:function(){
+                           Ext.example.msg('ERROR','Error de Conexión');
+                       }
+                   });
+                   }else{
+                       Ext.example.msg('ERROR',"Hay campos vacios");
+                   }
+                   
+               });
+           }
+        </script>
+    </head>
+    
+    <body style="background-color: #99CC99; margin-top: -13px;">
+        <div id="header" ><h1 style="text-align:center;">Expecom-Sistema para el control de Expedientes</h1></div>
+            <form class="pure-form pure-form-aligned" style="text-align: center;margin-top: 200px; ">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="name">Usuario</label>
+                    <input id="tf_user" type="text" placeholder="Usuario">
+                </div>
+
+                <div class="pure-control-group">
+                    <label for="password">Contrase&ntilde;a</label>
+                    <input id="tf_password" type="password" placeholder="Contrase&ntilde;a">
+                </div>
+                <div class="pure-controls">
+                    <button type="button"  class="pure-button pure-button-primary" onclick="login()"  >Entrar</button>
+                </div>
+            </fieldset>
+        </form>
+            
+    </body>
+</html>

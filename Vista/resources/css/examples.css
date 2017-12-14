@@ -1,0 +1,23 @@
+/*!
+ * Ext JS Library 3.4.0
+ * Copyright(c) 2006-2011 Sencha Inc.
+ * licensing@sencha.com
+ * http://www.sencha.com/license
+*/
+h2 {
+    font-size:15px;
+    font-weight:bold;
+    margin:10px 0;
+}
+.msg .x-box-mc {
+    font-size:14px;
+    -moz-border-radius:    13px;
+    border-radius:         13px;
+}
+#msg-div {
+    position:absolute;
+    left:35%;
+    top:10px;
+    width:450px;
+    z-index:20000;
+}
